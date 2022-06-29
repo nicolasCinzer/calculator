@@ -11,6 +11,7 @@ function Button(props) {
       className={`buttonContainer ${
         operator(props.children) ? "operator" : "number"
       }`}
+      onClick={() => props.clickHandler(props.children)}
     >
       {props.children}
     </div>
